@@ -22,3 +22,8 @@ Technologies Used:
 
 
 In conclusion, this application aims to elevate the Magic: The Gathering experience by providing a comprehensive and user-friendly platform for managing life points, tracking game progress, and fostering friendly competition. By leveraging robust features and intuitive navigation, it empowers players to focus on the strategic aspects of the game.
+
+<br>
+<div align="center">
+<img src="UI.png">
+</div>
