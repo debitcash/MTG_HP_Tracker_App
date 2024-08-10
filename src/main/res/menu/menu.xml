@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/game" />
+    <item
+        android:id="@+id/nav_dice"
+        android:title="@string/roll_dice" />
+    <item
+        android:id="@+id/nav_change_names"
+        android:title="@string/change_names" />
+    <item
+        android:id="@+id/nav_saved_games"
+        android:title="@string/saved_games" />
+    <item
+        android:id="@+id/nav_leaderboard"
+        android:title="@string/leaderboard" />
+    <item
+        android:id="@+id/player_change"
+        android:title="@string/reset"
+        />
+    <item
+        android:id="@+id/nav_randomcard"
+        android:title="Random Card"
+        />
+    <item
+        android:id="@+id/nav_more"
+        android:title="@string/more"
+        />
+
+   <item
+       android:title=""
+       />
+
+    <item
+        android:id="@+id/logOut"
+        android:title="@string/logout"
+        />
+
+
+</menu>

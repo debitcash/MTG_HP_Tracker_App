@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474554"
+    tools:context=".gamelayouts.Game3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ACA9BB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#ACA9BB"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="276dp"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="276dp"
+        android:background="#ACA9BB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player1Hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/player1Hp"
+        android:textSize="35sp"
+        android:textColor="#ACA9BB"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/minus1"
+        app:layout_constraintStart_toEndOf="@+id/plus1"
+        app:layout_constraintTop_toBottomOf="@+id/minus1" />
+
+    <TextView
+        android:id="@+id/player1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/player1Name"
+        android:textColor="#ACA9BB"
+        android:textSize="35sp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/minus1"
+        app:layout_constraintEnd_toStartOf="@+id/minus1"
+        app:layout_constraintStart_toEndOf="@+id/plus1"/>
+
+    <TextView
+        android:id="@+id/player3Hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/player3Hp"
+        android:textColor="#ACA9BB"
+        app:layout_constraintEnd_toStartOf="@+id/minus3"
+        app:layout_constraintStart_toEndOf="@+id/plus3"
+        app:layout_constraintTop_toBottomOf="@+id/minus3"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/plus2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tint="#04261D" />
+
+    <ImageView
+        android:id="@+id/minus1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/minus"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tint="#04261D" />
+
+    <TextView
+        android:id="@+id/player2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/player2Name"
+        android:textColor="#ACA9BB"
+        android:layout_marginBottom="50dp"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/minus2"
+        app:layout_constraintEnd_toStartOf="@+id/minus2"
+        app:layout_constraintStart_toEndOf="@+id/plus2" />
+
+    <TextView
+        android:id="@+id/player2Hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:text="@string/player2Hp"
+        android:textColor="#ACA9BB"
+        app:layout_constraintEnd_toStartOf="@+id/minus2"
+        app:layout_constraintStart_toEndOf="@+id/plus2"
+        app:layout_constraintTop_toBottomOf="@+id/minus2" />
+
+    <ImageView
+        android:id="@+id/minus2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginRight="25dp"
+        app:tint="#04261D" />
+
+    <ImageView
+        android:id="@+id/plus3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:tint="#04261D" />
+
+    <ImageView
+        android:id="@+id/minus3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:tint="#04261D" />
+
+    <TextView
+        android:id="@+id/player3Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/player3Name"
+        android:textColor="#ACA9BB"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/minus3"
+        app:layout_constraintEnd_toStartOf="@+id/minus3"
+        app:layout_constraintStart_toEndOf="@+id/plus3" />
+
+    <ImageView
+        android:id="@+id/plus1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/plus"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tint="#04261D" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/_3_players"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
